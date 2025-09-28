@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  data-api:
+    build: .
+    container_name: data-api-container
+    command: uvicorn dataReader:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./prospects.json:/app/prospects.json
+      - ./vagas.json:/app/vagas.json
+      - ./applicants.json:/app/applicants.json
+
+  main-api:
+    build: .
+    container_name: main-api-container
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./prospects.json:/app/prospects.json
+      - ./vagas.json:/app/vagas.json
+      - ./applicants.json:/app/applicants.json
+    depends_on:
+      - data-api
