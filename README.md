@@ -50,12 +50,9 @@ As instruções a seguir detalham como configurar e executar a aplicação usand
 
 ### **Pré-requisitos**
 
-Para rodar a aplicação, você precisa ter o **Docker Desktop** instalado e em execução na sua máquina.
+Para rodar a aplicação, você precisa ter o **Docker Desktop** (com Docker Compose) instalado e em execução na sua máquina.
 
 * **[Baixe o Docker Desktop](https://www.docker.com/products/docker-desktop/)**
-
----
-* **Docker Desktop** (com Docker Compose) instalado e em execução.
 
 ### **Comandos para Executar a Aplicação**
 
