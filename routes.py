@@ -10,9 +10,9 @@ API_BASE = "http://data-api:8000"
 @router.get("/applicants_por_vaga/{vaga_id}")
 def applicants_por_vaga(vaga_id: str):
     try:
-        vagas_data = requests.get(f"{API_BASE}/vagas", timeout=15).json()
-        prospects_data = requests.get(f"{API_BASE}/prospects", timeout=15).json()
-        applicants_data = requests.get(f"{API_BASE}/applicants", timeout=15).json()
+        vagas_data = requests.get(f"{API_BASE}/vagas", timeout=90).json()
+        prospects_data = requests.get(f"{API_BASE}/prospects", timeout=90).json()
+        applicants_data = requests.get(f"{API_BASE}/applicants", timeout=90).json()
     except Exception as e:
         return {"erro": f"Não foi possível acessar a API principal: {str(e)}"}
 
