@@ -49,7 +49,17 @@ A estrutura de diretórios do projeto segue um padrão modular para facilitar a 
 As instruções a seguir detalham como configurar e executar a aplicação usando Docker e Docker Compose.
 
 ### **Pré-requisitos**
+Seu pedido não está claro. Se você quiser o trecho de código para incluir no arquivo `README.md`, aqui está a seção completa de Pré-requisitos para você copiar:
 
+---
+
+### **Pré-requisitos**
+
+Para rodar a aplicação, você precisa ter o **Docker Desktop** instalado e em execução na sua máquina.
+
+* **[Baixe o Docker Desktop](https://www.docker.com/products/docker-desktop/)**
+
+---
 * **Docker Desktop** (com Docker Compose) instalado e em execução.
 
 ### **Comandos para Executar a Aplicação**
